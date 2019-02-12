@@ -2,6 +2,7 @@ package snackBarApp;;
 
 public class Vending {
     private static int maxId;
+    private int id;
     private String name;
 
     public Vending(String name){
@@ -9,6 +10,10 @@ public class Vending {
         id = maxId;
 
         this.name = name;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getName() {

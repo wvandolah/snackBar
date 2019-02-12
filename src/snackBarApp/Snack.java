@@ -18,6 +18,10 @@ public class Snack {
         this.vendingID = vendingID;
     }
 
+    public  String getName(){
+        return this.name;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -30,7 +34,8 @@ public class Snack {
         this.quantity += addQuantity;
     }
 
-    public void buySnack(int quantity){
+    public double buySnack(int quantity){
         this.quantity -= quantity;
+        return this.cost * quantity;
     }
 }
