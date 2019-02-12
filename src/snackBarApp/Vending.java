@@ -1,6 +1,6 @@
 package snackBarApp;;
 
-public class Vending{
+public class Vending {
     private static int maxId;
     private String name;
 
